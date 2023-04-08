@@ -1,0 +1,10 @@
+.headerimg {
+    width: 100%;
+}
+
+.menutitle {
+    font-family: 'Shrikhand', cursive;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+}
