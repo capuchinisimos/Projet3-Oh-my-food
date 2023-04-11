@@ -256,3 +256,80 @@ footer {
     text-decoration: none;
     color: white;
 }
+
+/*MEDIA QUERIES*/
+@media (min-width: 767px) {
+    footer {
+        text-align: center;
+    }
+
+    .footerlg {
+        font-family: "Shrikhand", "sans-serif";
+        padding: 5px 0 20px 0;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    footer ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer ul li {
+        padding: 5px 0 5px 0;
+    }
+
+    footer ul .fa-utensils {
+        margin-right: 12px;
+    }
+
+    footer ul .fa-hands-helping {
+        margin-right: 5px;
+    }
+
+    .start {
+        background: #f6f6f6;
+        text-align: center;
+        width: 100%;
+        padding: 40px 0;
+    }
+
+
+    .lg {
+        width: 25%;
+    }
+
+    .start,
+    .middle,
+    .aftermiddle {
+        padding: 70px;
+    }
+
+    .filtres {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+/* menu */
+
+.headerimg {
+    width: 100%;
+}
+
+.menutitle {
+    font-family: 'Shrikhand', cursive;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+}
