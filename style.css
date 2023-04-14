@@ -5,7 +5,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #EAEAEA
+
+
+
+
 }
 
 header {
@@ -40,12 +43,11 @@ input {
     border: none;
     height: 30px;
     background: #EAEAEA;
+    margin: 20px;
 
 }
 
-.fa-solid {
-    padding: 10px;
-}
+
 
 .title {
     text-align: center;
@@ -62,12 +64,14 @@ title,
 .subtitle {
     text-align: center;
     width: 100%;
-    background: #D2D2D2;
+
     padding: 20px 10px;
 }
 
 .subtitle {
     padding: 20px 0;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .btn {
@@ -118,19 +122,23 @@ li {
     box-shadow: 2px 2px 7px #F6F6F6;
     width: 100%;
     height: 72.38px;
-    padding-left: 40px;
+
 }
 
-
+.describe {
+    font-size: 16px;
+    padding: 20px;
+}
 
 .number1,
 .number2,
 .number3 {
     border-radius: 50%;
+    line-height: 1.5;
     background-color: #9356dc;
     color: white;
     position: absolute;
-    left: 28px;
+    left: 4px;
     padding: 2px 10px;
 }
 
@@ -188,8 +196,8 @@ figcaption {
 
 
 
-    margin-top: 20px;
-    width: 100%;
+
+
     background-color: #FFFFFF;
     border-radius: 20px 20px 0px 0px;
 
@@ -208,7 +216,7 @@ figcaption {
 .pic4 {
 
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
@@ -225,14 +233,12 @@ figcaption {
 
 footer {
 
-
+    padding: 30px;
     background: rgba(23, 23, 23, 0.8);
 
 }
 
-.ft {
-    padding: 20px;
-}
+
 
 .footerlg {
     color: rgb(245, 244, 241);
@@ -258,36 +264,32 @@ footer {
 /*MEDIA QUERIES*/
 @media (min-width: 767px) {
     footer {
-        text-align: right;
+
+
+        width: 100%;
+        padding: 50px;
     }
 
-    .footerlg {
-        font-family: "Shrikhand", "sans-serif";
-        padding: 5px 0 20px 0;
+
+
+    .ft {
+        flex-direction: row-reverse;
+        display: flex;
+        gap: 40px;
+        justify-content: right;
+
+
+
     }
 
-    footer a {
-        color: white;
-    }
-
-    footer ul {
-        list-style-type: none;
+    .footerlinks {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 30px;
     }
 
-    footer ul li {
-        padding: 5px 0 5px 0;
-    }
 
-    footer ul .fa-utensils {
-        margin-right: 12px;
-    }
 
-    footer ul .fa-hands-helping {
-        margin-right: 5px;
-    }
 
     .start {
         background: #f6f6f6;
@@ -301,15 +303,26 @@ footer {
         width: 25%;
     }
 
-    .start,
+
     .middle,
-    .aftermiddle {
-        padding: 70px;
+    .resto {
+        margin: 30px;
+
     }
 
     .filtres {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+    }
+
+    .filtre1,
+    .filtre2,
+    .filtre3 {
+        gap: 10px;
+        width: 20%;
+        font-size: 16px;
+
     }
 
     .number1,
@@ -326,9 +339,9 @@ footer {
 
     .aftermiddle {
         display: flex;
+
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
         gap: 30px;
     }
 
@@ -338,8 +351,10 @@ footer {
     .card4 {
 
 
-        width: 40%;
-        height: 251px;
+        width: 30%;
+        margin: 30px;
+
+
     }
 }
 
