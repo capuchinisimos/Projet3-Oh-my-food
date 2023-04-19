@@ -11,6 +11,11 @@ body {
 
 }
 
+img {
+    object-fit: cover;
+}
+
+
 header {
     padding: 10px 0;
     background-color: #FFFFFF;
@@ -19,13 +24,13 @@ header {
 .logo {
     display: flex;
     justify-content: center;
+    padding: 10px;
 
 }
 
 .lg {
     width: 50%;
 }
-
 
 .position {
     text-align: center;
@@ -118,7 +123,7 @@ li {
     align-items: center;
     background: #ececec;
     border-radius: 20px;
-    margin: 10px 20px 20px 25px;
+    margin: 10px;
     box-shadow: 2px 2px 7px #F6F6F6;
     width: 100%;
     height: 72.38px;
@@ -133,16 +138,16 @@ li {
 .number1,
 .number2,
 .number3 {
-    border-radius: 50%;
+    border-radius: 90%;
     line-height: 1.5;
     background-color: #9356dc;
     color: white;
     position: absolute;
-    left: 4px;
+    left: 10px;
     padding: 2px 10px;
 }
 
-.fa-solid:hover {
+.fa-regular:hover {
     color: #9356dc;
 }
 
@@ -153,6 +158,7 @@ li {
 
 h2 {
     padding: 10px 30px;
+
 }
 
 .aftermiddle {
@@ -179,7 +185,7 @@ figcaption {
 .fa-heart:hover {
 
 
-
+    font-weight: 900;
     color: transparent;
 
 
@@ -193,10 +199,6 @@ figcaption {
 .card2,
 .card3,
 .card4 {
-
-
-
-
 
     background-color: #FFFFFF;
     border-radius: 20px 20px 0px 0px;
@@ -233,7 +235,7 @@ figcaption {
 
 footer {
 
-    padding: 30px;
+    padding: 15px;
     background: rgba(23, 23, 23, 0.8);
 
 }
@@ -259,6 +261,112 @@ footer {
 .ft4 {
     text-decoration: none;
     color: white;
+    font-size: 16px;
+}
+
+/* menu */
+
+.headerimg {
+
+    width: 100%;
+    height: 300px;
+}
+
+.menutitle {
+    font-family: 'Shrikhand', cursive;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+}
+
+
+
+header.a {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    color: #3c3c3c;
+    position: relative;
+}
+
+.fa-arrow-left {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.menu {
+    background-color: #f6f6f6;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+    padding: 10px;
+}
+
+.menucards {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+
+}
+
+.menucard1,
+.menucard2,
+.menucard3 {
+    flex-direction: column;
+
+    justify-content: start;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+
+    background: #ececec;
+    border-radius: 20px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 7px #F6F6F6;
+    width: 100%;
+    height: 72.38px;
+    position: relative;
+    padding: 15px;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+.about1 {
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0 30px 0 0;
+}
+
+.price {
+    position: absolute;
+    right: 2px;
+    bottom: 15px;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.order {
+    padding: 20px;
+}
+
+.corazon {
+    right: 20px;
 }
 
 /*MEDIA QUERIES*/
@@ -267,7 +375,7 @@ footer {
 
 
         width: 100%;
-        padding: 50px;
+        padding: 60px 100px 20px;
     }
 
 
@@ -288,8 +396,9 @@ footer {
         gap: 30px;
     }
 
-
-
+    h2 {
+        margin-left: 300px;
+    }
 
     .start {
         background: #f6f6f6;
@@ -300,7 +409,7 @@ footer {
 
 
     .lg {
-        width: 25%;
+        width: 15%;
     }
 
 
@@ -320,7 +429,7 @@ footer {
     .filtre2,
     .filtre3 {
         gap: 10px;
-        width: 20%;
+        width: 22%;
         font-size: 16px;
 
     }
@@ -356,17 +465,30 @@ footer {
 
 
     }
-}
 
-/* menu */
+    .headerimg {
+        width: 100%;
+    }
 
-.headerimg {
-    width: 100%;
-}
+    .menucards {
+        display: flex;
 
-.menutitle {
-    font-family: 'Shrikhand', cursive;
-    font-size: 17px;
-    display: flex;
-    justify-content: center;
+    }
+
+    .menucard1,
+    .menucard2,
+    .menucard3 {
+        gap: 10px;
+
+        font-size: 16px;
+
+    }
+
+    .menu {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+
+    }
 }
