@@ -202,9 +202,9 @@ li {
     background: #F6F6F6;
     border-radius: 20px;
     margin: 10px;
-    box-shadow: 2px 2px 7px #F6F6F6;
     width: 100%;
     height: 72.38px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 
 }
 
@@ -263,14 +263,14 @@ figcaption {
     position: absolute;
     right: 2px;
     bottom: 10px;
-    transition: transform 300ms;
+    transition: transform 300ms ease-in-out;
 
 
 }
 
 .fa-heart:hover {
 
-    transform: scale(1.5);
+    transform: scale(1.2);
     font-weight: 900;
     color: transparent;
 
@@ -289,6 +289,7 @@ figcaption {
 
     background-color: #FFFFFF;
     border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -423,11 +424,11 @@ header.a {
     height: 72.38px;
     position: relative;
     padding: 15px;
-    cursor: pointer;
+
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    transition: padding-right 450ms ease-in-out;
+    transition: transform 400ms ease-in-out;
 }
 
 
@@ -445,7 +446,7 @@ header.a {
     right: -50px;
     top: 0;
     opacity: 0;
-    transition: transform 330ms ease-in-out;
+    transition: transform 400ms ease-in-out;
 }
 
 .fa-check-circle {
@@ -454,7 +455,9 @@ header.a {
 }
 
 .menucard:hover {
+    transform: scaleY(1.15);
     padding-right: 75px;
+
 }
 
 .menucard:hover .menuchecked {
@@ -466,6 +469,9 @@ header.a {
     transform: rotate(360deg);
 }
 
+.menucard:hover .price {
+    transform: translate(-50px);
+}
 
 h5 {
     text-transform: uppercase;
@@ -575,6 +581,8 @@ h3 {
         gap: 10px;
         width: 22%;
         font-size: 16px;
+        position: relative;
+        justify-content: flex-start;
 
     }
 
@@ -582,13 +590,20 @@ h3 {
     .number2,
     .number3 {
         position: relative;
-        left: 1px;
-        border-radius: 50%;
+
+        left: -10px;
+        border-radius: 90%;
         background-color: #9356dc;
         color: white;
-        padding: 2px 10px;
+        padding: 1px 7px;
     }
 
+
+    .describe {
+        font-size: 14px;
+        padding: 0;
+
+    }
 
     .aftermiddle {
         display: flex;
@@ -632,5 +647,15 @@ h3 {
         flex-direction: column;
         margin-left: 25%;
 
+    }
+
+    .about1 {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 0.1;
+        margin: 10px 10px 0 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: visible;
     }
 }
