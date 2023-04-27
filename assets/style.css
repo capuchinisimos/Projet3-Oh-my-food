@@ -421,7 +421,7 @@ header.a {
     margin: 10px 0;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: 72.38px;
+    height: 69px;
     position: relative;
     padding: 15px;
 
@@ -437,8 +437,8 @@ header.a {
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
-    width: 50px;
-    height: 74px;
+    width: 59px;
+    height: 69px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position: absolute;
@@ -452,10 +452,12 @@ header.a {
 .fa-check-circle {
     color: #fff;
     transition: transform 500ms ease-in-out;
+    width: 20px;
+    height: 20px;
 }
 
 .menucard:hover {
-    transform: scaleY(1.15);
+
     padding-right: 75px;
 
 }
@@ -489,6 +491,7 @@ h5 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    padding-right: 30px;
 }
 
 .price {
@@ -503,6 +506,9 @@ h5 {
 h3 {
     font-size: 16px;
     font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 30px;
 }
 
 .order {
@@ -578,7 +584,7 @@ h3 {
     .filtre1,
     .filtre2,
     .filtre3 {
-        gap: 10px;
+        gap: 37px;
         width: 22%;
         font-size: 16px;
         position: relative;
