@@ -346,11 +346,17 @@ footer {
     color: white;
 }
 
-.ft a {
+.footerlink {
     text-decoration: none;
     color: white;
     font-size: 16px;
     list-style-type: none;
+}
+
+.footerlink a {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
 }
 
 /* menu */
